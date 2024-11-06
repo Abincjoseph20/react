@@ -2,25 +2,33 @@ import React from 'react';
 import Labal from './labal';
 import './listitems.css'
 
+
 function Listitem(props){
-    console.log(props);
+    const   {
+        title,
+        descr,
+        isActive,
+        onDelete,
+
+    } = props;
     return(
         <div className='list-item'>
+            <hr/>
             <div className='list-title'>
-                <h4>{props.title}</h4>
+                <h4>{title}</h4>
+                <label onClick={onDelete}>delete</label>
             </div>
             <div className='list-descr'>
-                <h4>{props.descr}</h4>
+                {descr}
             </div>
-            <div className='list-label'>
-                    <Labal onAction={()=>{
-                        console.log('paranent clicked'); //callback props
-                    }} isActive={props.isActive}/> 
+            <div className='list-labal'>
+                    <Labal isActive={isActive}/>
                 <hr/>
             </div>
+
         </div>
     )
-};
+}
 
 
 export default Listitem;

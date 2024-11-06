@@ -1,14 +1,14 @@
 .list-tools{
     padding: 20px;
     margin-bottom: 50px;
-    background: rgb(178, 198, 197);
-    border: 3px solid #6108e8;
+    background: rgb(226, 242, 247);
+    border: 3px solid #ceb6f1f1;
 }
 
 .list-footer{
     font-size: 25px;
-    color: rgb(185, 182, 241);
-    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(184, 171, 246);
     text-align: center;
     width: 150px;
 }
